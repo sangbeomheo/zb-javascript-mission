@@ -1,13 +1,13 @@
-import Picker from './Picker.js';
-import Calendar from './Calendar.js';
-import CalendarNav from './CalendarNav.js';
-import CalendarGrid from './CalendarGrid.js';
+import Picker from './js/Picker.js';
+import Calendar from './js/Calendar.js';
+import CalendarNav from './js/CalendarNav.js';
+import CalendarGrid from './js/CalendarGrid.js';
 import {
   $,
   getPrevMonthDate,
   getNextMonthDate,
   getDateString,
-} from './utils.js';
+} from './js/utils.js';
 
 const TODAY = new Date();
 
