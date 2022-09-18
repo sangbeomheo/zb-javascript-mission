@@ -2,7 +2,12 @@ import Picker from './Picker.js';
 import Calendar from './Calendar.js';
 import CalendarNav from './CalendarNav.js';
 import CalendarGrid from './CalendarGrid.js';
-import { $, getPrevMonthDate, getNextMonthDate } from './utils.js';
+import {
+  $,
+  getPrevMonthDate,
+  getNextMonthDate,
+  getDateString,
+} from './utils.js';
 
 const TODAY = new Date();
 
@@ -82,10 +87,10 @@ export default function App() {
 
     this.state.selectedDate = new Date(year, month, clickedDate);
     calendarGrid.state.selectedDate = this.state.selectedDate;
-
     this.state.isOpen = false;
     calendar.close();
     picker.renderPickerValue(this.state.selectedDate);
+    console.log(getDateString(this.state.selectedDate));
   };
 
   $('html').addEventListener('click', ({ target }) => {
