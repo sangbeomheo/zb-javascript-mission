@@ -5,7 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Date Picker</title>
-    <script defer src="./dist/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <h1>Date Picker</h1>
+
+      <input
+        class="picker"
+        type="text"
+        placeholder="Select date"
+        value=""
+        readonly
+      />
+
+      <div class="calendar">
+        <div class="calendar-nav">
+          <button type="button" class="calendar-nav-button prev">
+            <<<
+            <span class="sr-only">이전달 보기</span>
+          </button>
+          <h3 class="calendar-title">
+            <span class="month">January</span>
+            <span class="year">2022</span>
+          </h3>
+          <button type="button" class="calendar-nav-button next">
+            >>>
+            <span class="sr-only">다음달 보기</span>
+          </button>
+        </div>
+        <ul class="calendar-grid">
+          <li class="grid-unit day">sun</li>
+          <li class="grid-unit day">mon</li>
+          <li class="grid-unit day">tue</li>
+          <li class="grid-unit day">wed</li>
+          <li class="grid-unit day">thr</li>
+          <li class="grid-unit day">fri</li>
+          <li class="grid-unit day">sat</li>
+          <li class="grid-unit date prev">27</li>
+          <li class="grid-unit date prev">28</li>
+          <li class="grid-unit date prev">29</li>
+          <li class="grid-unit date prev">30</li>
+          <li class="grid-unit date prev">31</li>
+          <li class="grid-unit date basic">1</li>
+          <li class="grid-unit date basic">2</li>
+          <li class="grid-unit date sunday">3</li>
+          <li class="grid-unit date today">4</li>
+          <li class="grid-unit date selected">5</li>
+          <li class="grid-unit date basic">6</li>
+          <li class="grid-unit date basic">7</li>
+          <li class="grid-unit date basic">8</li>
+          <li class="grid-unit date basic">9</li>
+          <li class="grid-unit date basic">10</li>
+          <li class="grid-unit date basic">11</li>
+          <li class="grid-unit date basic">12</li>
+          <li class="grid-unit date basic">13</li>
+          <li class="grid-unit date basic">14</li>
+          <li class="grid-unit date basic">15</li>
+          <li class="grid-unit date basic">16</li>
+          <li class="grid-unit date basic">17</li>
+          <li class="grid-unit date basic">18</li>
+          <li class="grid-unit date basic">19</li>
+          <li class="grid-unit date basic">21</li>
+          <li class="grid-unit date basic">22</li>
+          <li class="grid-unit date basic">23</li>
+          <li class="grid-unit date basic">24</li>
+          <li class="grid-unit date basic">25</li>
+          <li class="grid-unit date basic">26</li>
+          <li class="grid-unit date basic">27</li>
+          <li class="grid-unit date basic">28</li>
+          <li class="grid-unit date basic">29</li>
+          <li class="grid-unit date basic">30</li>
+          <li class="grid-unit date basic">31</li>
+          <li class="grid-unit date next">1</li>
+          <li class="grid-unit date next">2</li>
+          <li class="grid-unit date next">3</li>
+          <li class="grid-unit date next">4</li>
+          <li class="grid-unit date next">5</li>
+          <li class="grid-unit date next">6</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

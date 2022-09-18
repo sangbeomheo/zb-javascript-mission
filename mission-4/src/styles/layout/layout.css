@@ -1,0 +1,14 @@
+body {
+  background: var(--color-gray-100);
+}
+
+.app {
+  margin: 24px;
+}
+
+.app h1 {
+  margin-bottom: 24px;
+  color: var(--color-blue);
+  font-size: 4rem;
+  font-weight: 700;
+}

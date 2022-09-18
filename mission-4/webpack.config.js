@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
-    main: './src/app.js',
+    main: './src/main.js',
   },
   output: {
     filename: '[name].js',
