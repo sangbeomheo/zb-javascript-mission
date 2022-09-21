@@ -1,5 +1,11 @@
 # 미션 5. News Viewer
 
+## 데모
+
+![데모](https://media.giphy.com/media/XrB3HeRTQpEqiziEMq/giphy-downsized-large.gif)
+
+<br>
+
 ## 요구 사항
 
 ### 1. 2개의 컴포넌트로 News Viewer를 구성한다.
